@@ -74,7 +74,7 @@ nav ul li{
     justify-content: space-evenly;
     align-items: center;   
     width: clamp(25px,20vw,200px);
-    height: clamp(35px, 6vw, 90px);
+    height: clamp(35px, 5vw, 90px);
     color: rgb(13, 68, 68);
 }
 
