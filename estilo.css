@@ -86,7 +86,7 @@ nav li a:hover{
     
 }
 a{
-    font-size: clamp(10px,1.5vw,2rem);
+    font-size: clamp(10px,1vw,2rem);
 }
 p{
     
