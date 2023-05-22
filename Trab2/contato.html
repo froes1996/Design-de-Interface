@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <LINK rel= "stylesheet" href="estilos/estilo.css">
+    </head>
+
+
+    <body>
+        <header class="cabecalho">
+                <img class="logo" src="img/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="servicos.html">Servicos</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <section>
+            <h1>CONTATO</h1>
+            <H2>Preencha os campos a baixo que retornaremos assim que possivel</H2>
+
+            <div class="contato">
+            <form>
+                <fieldset>
+                    <label for="n1">Nome:</label>
+                    <input type="text" name="nome" id="n1"><br>
+                    
+                    <label for="t1">Telefone:</label>
+                    <input type="tel" name="tel" id="t1"><br>
+
+                    <label for="m1">Nome da empresa:</label>
+                    <input type="text" name="msg" id="m1"><br>
+
+                    <label for="c1">CPF/CNPJ:</label>
+                    <input type="text" name="cpf" id="c1"
+                    patterns="/^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}/" ><br>
+
+                    <label for="e1">E-mail:</label>
+                    <input type="email" name="mail" id="e1"><br>
+
+                    <label for="a1">Assunto:</label>
+                    <input type="text" name="assunto" id="a1"><br>
+
+                    <label for="m1">Mensagem:</label>
+                    <input type="text" name="msg" id="m1"><br>
+                
+                    <input class="botao" type = "submit" value = "ENVIAR"><br>
+                
+                </fieldset>
+            </form>
+            </div>
+
+        </section>           
+
+        <footer class = rodape>
+            <section class="soc">
+                <b>Rua A, 312, Rio Grande - RS</b>
+            <b>(53) 99100 - 0000  (53)3230 - 0000 contato@expressotransportes.com.br</b>
+            <div class = "social">
+                <figure>
+                <img src="img/instagram.png">
+                </figure>
+                <figure>
+                <img src="img/twitter.png">
+            </figure>
+            <figure>
+                <img src="img/facebook.png">
+            </figure>
+            <figure>
+                <img src="img/linkedin.png">
+            </figure>
+            <figure>
+                <img src="img/whatsapp.png">
+            </figure>
+            <figure>
+            <img src="img/youtube.png">
+            </figure>
+            </div>  
+        </section>       
+        </footer>
+    </body>
+    </html>

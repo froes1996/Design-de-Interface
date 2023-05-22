@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <LINK rel= "stylesheet" href="estilos/Style.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+                <img class="logo" src="img/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header> 
+     <div class = conteudo>
+         <section>
+            <h1>Cadastro:</h1>
+            <div>
+                <img class="imgcadastro" src="img/cadastro.jpg" alt="conteudo">
+                <div class="formulario">
+                <form>
+                <fieldset>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome"required><br>
+
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input type="date" name="dnasc" id="data-nascimento"required><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email"required><br>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="tel" id="telefone"required><br>
+
+                    <label for="CEP">CEP:</label>
+                    <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}"/><br>
+
+                    <label for="Rua">Rua:</label>
+                    <input type="text" name="Rua" id="rua"required><br>
+
+                    <label for="Numero">Numero:</label>
+                    <input type="text" name="Numero" id="numero"required><br>
+
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text" name="Bairro" id="Bairro"required><br>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="Cidade" id="cidade"required><br>
+
+                    <label for="Estado">Estado:</label>
+                    <input type="text" name="Estado" id="Estado"required><br>
+
+                    <label for="login">Login:</label>
+                    <input type="text" name="Login" id="login"required><br>
+
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="senha"required><br>
+
+                    <label for="confirmar-senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required><br>
+                    <div class="botao">
+                    <a href="./login.html" class="btn button-anim">
+                        Cadastrar 
+                    </div>
+                </fieldset>
+                
+            </form>
+        </div>
+         </div>
+    </div>
+        </section>           
+
+        <footer class = rodape>
+            <section class="soc">
+                <b>Rua A, 312, Rio Grande - RS</b>
+            <b>(53) 99100 - 0000  (53)3230 - 0000 contato@expressotransportes.com.br</b>
+            <div class = "social">
+                <figure>
+                <img src="img/instagram.png">
+                </figure>
+                <figure>
+                <img src="img/twitter.png">
+            </figure>
+            <figure>
+                <img src="img/facebook.png">
+            </figure>
+            <figure>
+                <img src="img/linkedin.png">
+            </figure>
+            <figure>
+                <img src="img/whatsapp.png">
+            </figure>
+            <figure>
+            <img src="img/youtube.png">
+            </figure>
+            </div>  
+        </section>       
+        </footer>
+    </body>
+    </html>
