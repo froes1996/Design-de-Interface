@@ -1,41 +1,46 @@
-/* My reset */
+@import "reset.css";
+  body{
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
 
-html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    vertical-align: baseline;
-    list-style: none;
-  }
-.container{
-  display:grid;
-  grid-template-rows: 20vh 70vh 10vh;
-} 
   header{
     display: flex;
     justify-content: space-evenly;  
     align-items: center;  
-    width: 100vw;
-    height: clamp(90px, 20vw,200px);          
+    width: 100%;
+    height: 12vw;          
     margin:auto;
     background: rgb(167,215,213);
     background: linear-gradient(180deg, rgba(167,215,213,1) 0%, rgba(255,255,255,1) 100%); 
     
   }
 .logo{
-  width: 12vw;
-  height: 12vw;
+  width: 10vw;
+  height: 10vw;
 }
+@media only screen and (max-width: 1000px) {
+  .logo {
+    width: 12vw;
+  }
 
+  header {
+    height: 12vw;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .logo {
+      width: 10vw;
+    }
+
+    header {
+      height: 10vw;
+    }
+  }
+
+
+}
   nav{
     
     font-size: clamp(10px,2vw,50px);
@@ -60,17 +65,10 @@ html {
     color: rgb(13, 68, 68);
   }
 
-  fieldset{
-    color: #f35916;
-    justify-content: space-evenly;
-    align-items: center; 
-}
-input{
-    background-color: #d9d9d9;
+  nav li a:hover{
 
-}
-.botao{
-    background-color: #f35916;
+    background-color: #f5923b;   
+    font-weight: 400;
+    color: antiquewhite;
 
-}
-
+  }
