@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <LINK rel= "stylesheet" href="estilos/login.css">
+    <LINK rel= "stylesheet" href="estilos/Style.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -18,12 +18,15 @@
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
-    </header>            
+    </header>  
+    <div class = "conteudo">          
       <section>
-        <div class = "login">
-            <h1>Faça seu Login:</h1>
-        <img class="imglogin" src="img/download.jpeg" alt="conteudo">
+        <h1>Faça seu Login:</h1>
+        <div>
+            
+        <img class="imglogin" src="img/login.jpg" alt="conteudo">
         <div class = "formulario">
+            <form>
         <Fieldset>
             <label for="l1">Login:</label>
                     <input type="text" name="Login" id="l1"><br>
@@ -31,39 +34,42 @@
                     <label for="s1">Senha:</label>
                     <input type="password" id="s1"><br>
                    
-                    <form action="index.html">
-                    <input class="botao" type = "submit" value = "ENTRAR"><br>
-                    </form>
+                    <div class="botao">
+                        <a href="./cadastro.html" class="btn button-anim">
+                            Cadastrar 
+                        </div>
         </Fieldset>
+    </form>
     </div>
-
-    </section>
 </div>
-    <footer class = rodape>
-        <section class="soc">
-            <b>Rua A, 312, Rio Grande - RS</b>
-            <b>(53) 99100 - 0000  (53)3230 - 0000 contato@expressotransportes.com.br</b>
-         <div class = "social">
-            <figure>
-            <img src="img/instagram.png">
-            </figure>
-            <figure>
-            <img src="img/twitter.png">
+</div>
+    </section>
+
+<footer class = rodape>
+    <section class="soc">
+        <b>Rua A, 312, Rio Grande - RS</b>
+    <b>(53) 99100 - 0000  (53)3230 - 0000 contato@expressotransportes.com.br</b>
+    <div class = "social">
+        <figure>
+        <img src="img/instagram.png">
         </figure>
         <figure>
-            <img src="img/facebook.png">
-        </figure>
-        <figure>
-            <img src="img/linkedin.png">
-        </figure>
-        <figure>
-            <img src="img/whatsapp.png">
-        </figure>
-        <figure>
-         <img src="img/youtube.png">
-        </figure>
-        </div>  
-    </section>       
-    </footer>
+        <img src="img/twitter.png">
+    </figure>
+    <figure>
+        <img src="img/facebook.png">
+    </figure>
+    <figure>
+        <img src="img/linkedin.png">
+    </figure>
+    <figure>
+        <img src="img/whatsapp.png">
+    </figure>
+    <figure>
+    <img src="img/youtube.png">
+    </figure>
+    </div>  
+</section>       
+</footer>
 </body>
 </html>
