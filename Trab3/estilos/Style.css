@@ -95,7 +95,10 @@ header{
 .page01 h1{
   font-size: clamp(12px, 30px,50px);
   text-align: center;
+  color: black;
 }
+
+
 
 .image-page01{
   width: 100%;
@@ -178,7 +181,9 @@ fieldset{
   justify-content: center;
 }
 input{
-  background-color: #d9d9d9;
+  background-color: none;
+  border: 0.1px solid #f35916;
+  border-radius: 4px;
   width: 30vw;
   height: 22px;
   margin-top: 10px;
