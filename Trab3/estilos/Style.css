@@ -13,12 +13,12 @@ h1{
   
 /*------------------------------GRID-------------------------------------*/
 
-body{
+/* body{
     display: grid;
     grid-template-areas: "header"
                         "section"
                         "footer";
-}
+} */
 /* ---------------------------   HEADER ------------------------------------*/
 header{
     display: flex;
@@ -83,52 +83,90 @@ header{
   }
 /*  -------------------------------------------SECTION----------------------------------------------------------------*/
 
-.conteudo{
+.page01{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page01 h1{
+  font-size: clamp(12px, 30px,50px);
+  text-align: center;
+}
+
+.image-page01{
   width: 100%;
-  grid-area: section;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.conteudo{
+  height: 100vh;
+display: grid;  
+grid-template-columns: 50% 50%;
   grid-template-areas:
-  "h1 h1" 
   "img-cadastro formulario";
 }
 
-.h1-cadastro{
-  grid-area: h1;
+@media(max-width:768px){
+  .conteudo{
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "img-cadastro"
+    "formulario";
+  }
 }
 
-.img-cadastro {
+
+.imglogin, .img-cadastro{
+  grid-area: img-cadastro;
+  
+}
+
+.imglogin img, .img-cadastro img{
   width: 50%;
-    height: 100vh;
-    grid-area: img-cadastro;
-    border-radius: 8px;
-    border: 2px solid red;
-    background-image: url("../img/cadastro.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-      
-  } 
-    @media(max-width:768px){
-      .img-cadastro{
-        width: 60vw;
-        height: 50vw;
-      };
-    }
-
-
-.imglogin{
-  width: 600px;
-  height: 400px;
-  padding-top: 40px;
-  align-items: center;
+ height: 100vh;
+ position: fixed;
 }
 @media(max-width:768px){
-  .imglogin{
-    width: 60vw;
-    height: 50vw;
+  .imglogin img, .img-cadastro img{
+    position: relative;
+    width: 100%;
+    height: 100%;
     align-content: center;
   };
+}
+.formulario{
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(167,215,213,1) 0%, rgba(255,255,255,1) 100%);   
+
+}
+
+
+.h1-formulario{
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media(max-width:768px){
+  .formulario{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .formulario h1{
+    margin-bottom: 20px;
+  }
 }
 
 fieldset{
@@ -138,12 +176,12 @@ fieldset{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
 }
 input{
   background-color: #d9d9d9;
   width: 30vw;
   height: 22px;
+  margin-top: 10px;
 }
 @media(max-width:768px){
   input{
@@ -162,20 +200,6 @@ input{
   color: rgb(255, 255, 255);
 }
 
-.formulario{
-  grid-area: formulario;
-  width: 100%;
-}
-
-@media(max-width:768px){
-  .formulario{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-  }
-}
 
 
 
@@ -201,15 +225,15 @@ footer{
     padding: 5px;
   
   }
-  section{
+  /* section{
     padding-top: 30px;
     display: flex;
     flex-direction: column;  
     justify-content: space-evenly;
     align-items: center;
     gap: 0.5vw;   
-  }
-  section div{
+  } */
+  /* section div{
   
     display: flex;
     flex-direction: row; 
@@ -217,9 +241,9 @@ footer{
     justify-content: space-evenly;
     align-items: center; 
     gap: 10vw;
-  }
-  section b{
+  } */
+  /* section b{
     font-size: clamp(2px, 1vw,30px);
     white-space: nowrap;
-  }
+  } */
   /* --------------------------------------------------------------------------------*/
